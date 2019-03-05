@@ -5,9 +5,7 @@ public class KnightMoves
 {
 static Scanner sc = new Scanner(System.in);
 
-// the following static array represents the 8
-// possible moves a knight can make
-// this is an 8 x 2 array
+
 
 static int[][] moves = 
 { 
@@ -34,12 +32,7 @@ while (getYorN("Do it again?"));
 
 public static void showKnightMoves() 
 {
-// The first dimension is the file (a, b, c, etc.) 
-// The second dimension is the rank (1, 2, 3, etc.) 
-// Thus, board[3][4] is square d5.
-// A value of 0 means the square is empty
-// 1 means the knight is in the square
-// 2 means the knight could move to the square
+
 
 int[][] board = new int[8][8];
 
@@ -82,8 +75,7 @@ printBoard(board);
 
 
 }
-// this method converts squares such as a1 or d5 to
-// x, y coordinates such as [0][0] or [3][4]
+
 public static Pos convertSquareToPos(String square){
 int x = -1;
 int y = -1;
@@ -117,8 +109,7 @@ else
 return new Pos(x, y);
 }
 
-// this method converts x, y coordinates such as
-// [0][0] or [3][4] to squares such as a1 or d5.
+
 
 public static String convertPosToSquare(Pos p)
  {
@@ -135,10 +126,7 @@ return file + (p.y + 1);
 }
 
 
-// this method calculates a new Pos given a
-// starting Pos, an x move, and a y move
-// it returns null if the resulting move would
-// be off the board.
+
 public static Pos calculateNewPos(Pos p, int x, int y) 
 {
  
