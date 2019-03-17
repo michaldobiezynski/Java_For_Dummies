@@ -33,6 +33,7 @@ public class SpinOffs extends JFrame
 		archie = makeShow("All in the Family", root);
 		george = makeShow("The Jeffersons", archie);
 		makeShow("Checking In", george);
+
 		maude = makeShow("Maude", archie);
 		makeShow("Good Times", maude);
 		makeShow("Gloria", archie);
@@ -70,8 +71,7 @@ public class SpinOffs extends JFrame
 
 	public void tree1Changed()
 	{
-		Object o = tree1.
-		getLastSelectedPathComponent();
+		Object o = tree1.getLastSelectedPathComponent();
 		DefaultMutableTreeNode show;
 		show = (DefaultMutableTreeNode) o;
 		String title = (String)show.getUserObject();

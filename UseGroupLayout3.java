@@ -43,4 +43,6 @@ public class UseGroupLayout3
         frame.add(panel);
         frame.pack();
         frame.setVisible(true);
-} }
+
+    } 
+}
