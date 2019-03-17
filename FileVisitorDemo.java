@@ -35,7 +35,8 @@ private static class MyFileVisitor extends SimpleFileVisitor <Path>
 
 	public FileVisitResult preVisitDirectoryFailed(Path dir, IOException e)
 	{
-		System.out.println(dir.toString() + " COULD NOT ACCESS!"); return FileVisitResult.CONTINUE;
+		System.out.println(dir.toString() + " COULD NOT ACCESS!"); 
+		return FileVisitResult.CONTINUE;
 	}
 
 }
