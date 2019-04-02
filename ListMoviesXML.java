@@ -14,7 +14,7 @@ public class ListMoviesXML
     	Document doc = getDocument("movies.xml");
         Element root = doc.getDocumentElement();
         Element movieElement = (Element)root.getFirstChild();
-        Movie m;
+        Movie m;                                                           
         while (movieElement != null)
         {
             m = getMovie(movieElement);
